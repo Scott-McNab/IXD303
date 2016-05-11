@@ -11,5 +11,5 @@
 
 ## Version 2
 
-* [Version 2](http://scott-mcnab.github.io/IXD303/periodic%2/index.html)
+* [Version 2](http://scott-mcnab.github.io/IXD303/periodic2/index.html)
 
