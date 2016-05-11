@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Periodic Table | C</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+    
+    <script>
+var looper;
+var degrees = 0;
+function rotateAnimation(el,speed){
+	var elem = document.getElementById(el);
+	if(navigator.userAgent.match("Chrome")){
+		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Firefox")){
+		elem.style.MozTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("MSIE")){
+		elem.style.msTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Opera")){
+		elem.style.OTransform = "rotate("+degrees+"deg)";
+	} else {
+		elem.style.transform = "rotate("+degrees+"deg)";
+	}
+	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	degrees++;
+	if(degrees > 359){
+		degrees = 1;
+	}
+	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+}
+</script>
+    
+</head>
+<body>
+    
+    <article>
+        
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="js/app.js"></script>
+    
+    <section id="nonmetal" class="wrapper">
+        
+        <img src="img/carbon.svg" id="img" alt="Carbon" />
+        
+        <script>rotateAnimation("img",30);</script>
+        
+        <h1>Carbon</h1>
+        
+        <div class="arrow"></div>
+    
+    </section>
+    
+    <section class="content">
+        
+        <p>Carbon occurs naturally as anthracite (a type of coal), graphite, and diamond. More readily available historically was soot or charcoal. Ultimately these various materials were recognised as forms of the same element. Not surprisingly, diamond posed the greatest difficulty of identification. Naturalist Giuseppe Averani and medic Cipriano Targioni of Florence were the first to discover that diamonds could be destroyed by heating.</p>
+        
+        <table class="table-fill">
+                
+                <tbody class="table-hover"></tbody>
+            <tr>
+                <td>Atomic Number</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Relative atomic mass</td>
+                <td>12.011</td> 
+            </tr>
+            <tr>
+                <td>Melting point</td>
+                <td>3825°C</td>
+            </tr>
+            <tr>
+                <td>Boiling point</td>
+                <td>3825°C</td> 
+            </tr>
+                </tbody>
+    </table>
+        
+        <p>Carbon is unique among the elements in its ability to form strongly bonded chains, sealed off by hydrogen atoms. These hydrocarbons, extracted naturally as fossil fuels (coal, oil and natural gas), are mostly used as fuels. Carbon is found in the sun and other stars, formed from the debris of a previous supernova. It is built up by nuclear fusion in bigger stars. It is present in the atmospheres of many planets, usually as carbon dioxide. On Earth, the concentration of carbon dioxide in the atmosphere is currently 390 ppm and rising.</p>
+    
+    </section>
+    
+    </article>
+
+</body>
+</html>

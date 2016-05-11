@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Periodic Table | Mg</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+    
+    <script>
+var looper;
+var degrees = 0;
+function rotateAnimation(el,speed){
+	var elem = document.getElementById(el);
+	if(navigator.userAgent.match("Chrome")){
+		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Firefox")){
+		elem.style.MozTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("MSIE")){
+		elem.style.msTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Opera")){
+		elem.style.OTransform = "rotate("+degrees+"deg)";
+	} else {
+		elem.style.transform = "rotate("+degrees+"deg)";
+	}
+	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	degrees++;
+	if(degrees > 359){
+		degrees = 1;
+	}
+	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+}
+</script>
+    
+</head>
+<body>
+    
+    <article>
+        
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="js/app.js"></script>
+    
+    <section id="alkaline" class="wrapper">
+        
+        <img src="img/magnesium.svg" id="img" alt="Magnesium" />
+        
+        <script>rotateAnimation("img",30);</script>
+        
+        <h1>Magnesium</h1>
+        
+        <div class="arrow"></div>
+        
+    </section>
+    
+    <section class="content">
+        
+        <p>The first person to recognise that magnesium was an element was Joseph Black at Edinburgh in 1755. He distinguished magnesia (magnesium oxide, MgO) from lime (calcium oxide, CaO) although both were produced by heating similar kinds of carbonate rocks, magnesite and limestone respectively.</p>
+        
+        <table class="table-fill">
+                
+                <tbody class="table-hover"></tbody>
+            <tr>
+                <td>Atomic Number</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Relative atomic mass</td>
+                <td>24.305</td> 
+            </tr>
+            <tr>
+                <td>Melting point</td>
+                <td>650°C</td>
+            </tr>
+            <tr>
+                <td>Boiling point</td>
+                <td>1090°C</td> 
+            </tr>
+                </tbody>
+    </table>
+        
+        <p>Magnesium is an essential element in both plant and animal life, it is a silvery-white metal that ignites easily in air and burns with a bright light. Chlorophyll is the chemical that allows plants to capture sunlight, and photosynthesis to take place. Chlorophyll is a magnesium-centred porphyrin complex. Without magnesium photosynthesis could not take place, and life as we know it would not exist.</p>
+    
+    </section>
+    
+    </article>
+
+</body>
+</html>

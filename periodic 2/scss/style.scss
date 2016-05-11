@@ -1,0 +1,164 @@
+@import "compass/css3";
+
+body {
+	background: url('http://subtlepatterns.com/patterns/low_contrast_linen.png');
+}
+
+#container {
+	width: 700px;
+	min-height: 700px;
+	position: relative;
+	margin: 15% 0 0 10%;
+}
+
+.circle-nav {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 30px;
+	background-color: red;
+	background-image: linear-gradient(top,#FF6969,#E30000);
+	border: 4px solid white;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#plus {
+	z-index: 1;
+	font-size: 56px;
+	line-height: 36px;
+}
+
+.link1out{
+	animation: move1out 0.5s 1 forwards;
+}
+
+.link1in{
+	animation: move1in 0.5s 1 forwards;
+}
+
+.link2out{
+	animation: move2out 0.5s 1 forwards;
+}
+
+.link2in{
+	animation: move2in 0.5s 1 forwards;
+}
+
+.link3out{
+	animation: move3out 0.5s 1 forwards;
+}
+
+.link3in{
+	animation: move3in 0.5s 1 forwards;
+}
+
+.link4out{
+	animation: move4out 0.5s 1 forwards;
+}
+
+.link4in{
+	animation: move4in 0.5s 1 forwards;
+}
+
+.plus{
+	animation: goplus 0.5s 1 forwards;
+}
+
+.times{
+	animation: gotimes 0.5s 1 forwards;
+}
+
+@keyframes move1out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-200px) rotate(360deg);
+  }
+}
+
+@keyframes move1in {
+  from {
+    transform: translateY(-200px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes move2out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-168px) translateX(100px) rotate(360deg);
+  }
+}
+
+@keyframes move2in {
+  from {
+    transform: translateY(-168px) translateX(100px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes move3out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-90px) translateX(168px) rotate(360deg);
+  }
+}
+
+@keyframes move3in {
+  from {
+    transform: translateY(-90px) translateX(168px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes move4out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateX(200px) rotate(360deg);
+  }
+}
+
+@keyframes move4in {
+  from {
+    transform: translateX(200px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes goplus {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes gotimes {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}

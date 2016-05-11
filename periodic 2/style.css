@@ -1,0 +1,566 @@
+/* ---- base ---- */
+
+* {margin: 0;padding: 0;}
+
+/* Basic body styling. */
+body{
+max-width: 100%;
+height: 100%;
+    background: linear-gradient(#1E0B21, #B542C5);
+color: white;
+font-family: sans-serif;
+}
+
+h1{
+   font-size: 2em;
+    font-weight: 400;
+}
+
+h2{
+   font-size: 2em;
+    font-weight: 200;
+}
+
+p{
+    font-size: 1em;
+    margin: 1%;
+}
+
+.element{
+    padding: 10% 0% 0 15%;
+    float: left;
+    width: 85%;
+    min-width: 400px;
+    margin:  0%;
+    font-family: 'Amatic SC', cursive;
+}
+
+.element p{
+    padding: 0% 20% 5% 15%;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+/* fly nav start */
+
+@import "compass/css3";
+
+#flynav {
+  width: 40%;
+  min-height: 20%;
+  margin: 15% 0 0 10%;
+}
+
+.circle-nav {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: #1ACA87;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+        
+        .circle-nav2 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: #73C6CE;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+        .circle-nav3 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: #CA8F1A;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+        
+        .circle-nav4 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: #CAB31A;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+        
+        .circle-nav5 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: #1ABACA;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+            
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#plus {
+  z-index: 1;
+  font-size: 64px;
+  line-height: 36px;
+}
+        
+#plus2 {
+  z-index: 1;
+  font-size: 64px;
+  line-height: 36px;
+}
+        
+    #plus3 {
+  z-index: 1;
+  font-size: 64px;
+  line-height: 36px;
+}
+        
+    #plus4 {
+  z-index: 1;
+  font-size: 64px;
+  line-height: 36px;
+}
+        
+    #plus5 {
+  z-index: 1;
+  font-size: 64px;
+  line-height: 36px;
+}
+
+.link1out {
+  animation: move1out 0.5s 1 forwards;
+}
+
+.link1in {
+  animation: move1in 0.5s 1 forwards;
+}
+
+.link2out {
+  animation: move2out 0.5s 1 forwards;
+}
+
+.link2in {
+  animation: move2in 0.5s 1 forwards;
+}
+
+.link3out {
+  animation: move3out 0.5s 1 forwards;
+}
+
+.link3in {
+  animation: move3in 0.5s 1 forwards;
+}
+
+.link4out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link4in {
+  animation: move4in 0.5s 1 forwards;
+}
+        
+        .link5out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link5in {
+  animation: move4in 0.5s 1 forwards;
+}
+        
+        .link6out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link6in {
+  animation: move4in 0.5s 1 forwards;
+}
+        
+        .link7out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link7in {
+  animation: move4in 0.5s 1 forwards;
+}
+        
+        .link8out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link8in {
+  animation: move4in 0.5s 1 forwards;
+}
+        
+        .link9out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link9in {
+  animation: move4in 0.5s 1 forwards;
+}
+        
+        .link10out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link10in {
+  animation: move4in 0.5s 1 forwards;
+}
+        
+        .link11out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link11in {
+  animation: move4in 0.5s 1 forwards;
+}
+
+.plus {
+  animation: goplus 0.5s 1 forwards;
+}
+    
+.plus2 {
+  animation: goplus 0.5s 1 forwards;
+}
+        
+        .plus3 {
+  animation: goplus 0.5s 1 forwards;
+}
+        
+        .plus4 {
+  animation: goplus 0.5s 1 forwards;
+}
+        
+        .plus5 {
+  animation: goplus 0.5s 1 forwards;
+}
+
+.times {
+  animation: gotimes 0.5s 1 forwards;
+}
+
+@keyframes move1out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-200px) rotate(360deg);
+  }
+}
+@keyframes move1in {
+  from {
+    transform: translateY(-200px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+        
+        @keyframes move5out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-200px) rotate(360deg);
+  }
+}
+@keyframes move5in {
+  from {
+    transform: translateY(-200px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes move2out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-168px) translateX(100px) rotate(360deg);
+  }
+}
+@keyframes move2in {
+  from {
+    transform: translateY(-168px) translateX(100px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes move3out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-90px) translateX(168px) rotate(360deg);
+  }
+}
+@keyframes move3in {
+  from {
+    transform: translateY(-90px) translateX(168px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes move4out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateX(200px) rotate(360deg);
+  }
+}
+@keyframes move4in {
+  from {
+    transform: translateX(200px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes goplus {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+    
+@keyframes gotimes {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+/* fly nav end */
+
+/*particle start */
+
+#particles-js{
+  width: 100%;
+  height: 75vh;
+  background-color: transparent;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat:repeat;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+
+}
+
+/* particle stop */
+
+.wrapper{
+    width: 100%;
+    min-width: 400px;
+    height: 40vh;
+    z-index: 0;
+    color: white;
+    font-size: 1.75em;
+    font-weight: bold;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    text-align: center; 
+    padding: 10% 0;
+    
+}
+
+.wrapper h1{
+    margin: 5% 0;
+}
+
+.content{
+    line-height: 2;
+    float: left;
+    width: 60%;
+    min-width: 400px;
+    padding: 10% 20%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    text-align: justify;
+}
+
+article{
+    float: left;
+    width: 100%;
+    min-width: 400px;
+}
+
+header{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding: 10% 15% 5% 15%;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+
+header img{
+    margin-top: 15%;
+}
+
+#alkaline{
+    background-color: #CAB31A;
+}
+
+
+#alkaline .arrow {
+    position: relative; /* so we can position the arrow wherever we want with respect to the bubble */
+    top: 40px; /* above the speech bubble */
+    left: 46%;
+    width: 0; /* see the comments in the HTML above */
+    height: 0; /* see the comments in the HTML above */
+    border-top: 50px solid #CAB31A; /* hide this border */
+    border-right: 60px solid transparent; /* hide this border */
+    border-bottom: 20px solid transparent; /* show the bottom border for the arrow */
+    border-left: 60px solid transparent; /* hide this border */
+}
+
+#noblegases{
+background-color: #1ABACA;}
+
+#noblegases .arrow {
+    position: relative; /* so we can position the arrow wherever we want with respect to the bubble */
+    top: 40px; /* above the speech bubble */
+    left: 46%;
+    width: 0; /* see the comments in the HTML above */
+    height: 0; /* see the comments in the HTML above */
+    border-top: 50px solid #1ABACA; /* hide this border */
+    border-right: 60px solid transparent; /* hide this border */
+    border-bottom: 20px solid transparent; /* show the bottom border for the arrow */
+    border-left: 60px solid transparent; /* hide this border */
+}
+
+#nonmetal{
+background-color: #1ACA87;}
+
+#nonmetal .arrow {
+    position: relative; /* so we can position the arrow wherever we want with respect to the bubble */
+    top: 40px; /* above the speech bubble */
+    left: 46%;
+    width: 0; /* see the comments in the HTML above */
+    height: 0; /* see the comments in the HTML above */
+    border-top: 50px solid #1ACA87; /* hide this border */
+    border-right: 60px solid transparent; /* hide this border */
+    border-bottom: 20px solid transparent; /* show the bottom border for the arrow */
+    border-left: 60px solid transparent; /* hide this border */
+}
+
+#halogen{
+background-color: #73C6CE;}
+
+#halogen .arrow {
+    position: relative; /* so we can position the arrow wherever we want with respect to the bubble */
+    top: 40px; /* above the speech bubble */
+    left: 46%;
+    width: 0; /* see the comments in the HTML above */
+    height: 0; /* see the comments in the HTML above */
+    border-top: 50px solid #73C6CE; /* hide this border */
+    border-right: 60px solid transparent; /* hide this border */
+    border-bottom: 20px solid transparent; /* show the bottom border for the arrow */
+    border-left: 60px solid transparent; /* hide this border */
+}
+
+#alkali{
+background-color: #CA8F1A;}
+
+#alkali .arrow {
+    position: relative; /* so we can position the arrow wherever we want with respect to the bubble */
+    top: 40px; /* above the speech bubble */
+    left: 46%;
+    width: 0; /* see the comments in the HTML above */
+    height: 0; /* see the comments in the HTML above */
+    border-top: 50px solid #CA8F1A; /* hide this border */
+    border-right: 60px solid transparent; /* hide this border */
+    border-bottom: 20px solid transparent; /* show the bottom border for the arrow */
+    border-left: 60px solid transparent; /* hide this border */
+}
+
+#nob{
+    margin-bottom: 15%;
+}
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 520px;
+  margin: auto;
+    margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 700px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:18px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+    border-left: 1px solid #C1C3D1;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+

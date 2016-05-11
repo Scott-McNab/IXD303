@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Periodic Table | O</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+    
+    <script>
+var looper;
+var degrees = 0;
+function rotateAnimation(el,speed){
+	var elem = document.getElementById(el);
+	if(navigator.userAgent.match("Chrome")){
+		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Firefox")){
+		elem.style.MozTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("MSIE")){
+		elem.style.msTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Opera")){
+		elem.style.OTransform = "rotate("+degrees+"deg)";
+	} else {
+		elem.style.transform = "rotate("+degrees+"deg)";
+	}
+	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	degrees++;
+	if(degrees > 359){
+		degrees = 1;
+	}
+	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+}
+</script>
+    
+</head>
+<body>
+    
+    <article>
+        
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="js/app.js"></script>
+    
+    <section id="nonmetal" class="wrapper">
+        
+        <img src="img/oxygen.svg" id="img" alt="Oxygen" />
+        
+        <script>rotateAnimation("img",30);</script>
+        
+        <h1>Oxygen</h1>
+        
+        <div class="arrow"></div>
+    
+    </section>
+    
+    <section class="content">
+        
+        <p>In 1608, Cornelius Drebbel had shown that heating saltpetre (potassium nitrate, KNO3) released a gas. This was oxygen although it was not identified as such. The credit for discovering oxygen is now shared by three chemists: an Englishman, a Swede, and a Frenchman. Joseph Priestley was the first to publish an account of oxygen, having made it in 1774 by focussing sunlight on to mercuric oxide (HgO), and collecting the gas which came off. He noted that a candle burned more brightly in it and that it made breathing easier.</p>
+        
+        <table class="table-fill">
+                
+                <tbody class="table-hover"></tbody>
+            <tr>
+                <td>Atomic Number</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Relative atomic mass</td>
+                <td>15.999</td> 
+            </tr>
+            <tr>
+                <td>Melting point</td>
+                <td>−218.79°C</td>
+            </tr>
+            <tr>
+                <td>Boiling point</td>
+                <td>−182.962°C</td> 
+            </tr>
+                </tbody>
+    </table>
+        
+        <p>Oxygen makes up 21% of the atmosphere by volume. This is halfway between 17% (below which breathing for unacclimatised people becomes difficult) and 25% (above which many organic compounds are highly flammable). The element and its compounds make up 49.2% by mass of the Earth’s crust, and about two-thirds of the human body.</p>
+    
+    </section>
+    
+    </article>
+
+</body>
+</html>

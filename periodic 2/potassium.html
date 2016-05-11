@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Periodic Table | K</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+    
+    <script>
+var looper;
+var degrees = 0;
+function rotateAnimation(el,speed){
+	var elem = document.getElementById(el);
+	if(navigator.userAgent.match("Chrome")){
+		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Firefox")){
+		elem.style.MozTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("MSIE")){
+		elem.style.msTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Opera")){
+		elem.style.OTransform = "rotate("+degrees+"deg)";
+	} else {
+		elem.style.transform = "rotate("+degrees+"deg)";
+	}
+	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	degrees++;
+	if(degrees > 359){
+		degrees = 1;
+	}
+	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+}
+</script>
+    
+</head>
+<body>
+    
+    <article>
+        
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="js/app.js"></script>
+    
+    <section id="alkali" class="wrapper">
+        
+        <img src="img/potassium.svg" id="img" alt="Potassium" />
+        
+        <script>rotateAnimation("img",30);</script>
+        
+        <h1>Potassium</h1>
+        
+        <div class="arrow"></div>
+    
+    </section>
+    
+    <section class="content">
+        
+        <p>Potassium salts in the form of saltpetre (potassium nitrate, KNO3), alum (potassium aluminium sulfate, KAl(SO4)2), and potash (potassium carbonate, K2CO3) have been known for centuries. They were used in gunpowder, dyeing, and soap making. They were scraped from the walls of latrines, manufactured from clay and sulfuric acid, and collected as wood ash respectively.</p>
+        
+        <table class="table-fill">
+                
+                <tbody class="table-hover"></tbody>
+            <tr>
+                <td>Atomic Number</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Relative atomic mass</td>
+                <td>39.098</td> 
+            </tr>
+            <tr>
+                <td>Melting point</td>
+                <td>63.5°C</td>
+            </tr>
+            <tr>
+                <td>Boiling point</td>
+                <td>759°C</td> 
+            </tr>
+                </tbody>
+    </table>
+        
+        <p>The greatest demand for potassium compounds is in fertilisers. Many other potassium salts are of great importance, including the nitrate, carbonate, chloride, bromide, cyanide and sulfate. Potassium carbonate is used in the manufacture of glass. Potassium hydroxide is used to make detergent and liquid soap. Potassium is the seventh most abundant metal in the Earth’s crust. It makes up 2.4% by mass. There are deposits of billions of tonnes of potassium chloride throughout the world. Mining extracts about 35 million tonnes a year.</p>
+    
+    </section>
+    
+    </article>
+
+</body>
+</html>

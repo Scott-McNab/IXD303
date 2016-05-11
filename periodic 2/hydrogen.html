@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Periodic Table | H</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+    
+    <script>
+var looper;
+var degrees = 0;
+function rotateAnimation(el,speed){
+	var elem = document.getElementById(el);
+	if(navigator.userAgent.match("Chrome")){
+		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Firefox")){
+		elem.style.MozTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("MSIE")){
+		elem.style.msTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Opera")){
+		elem.style.OTransform = "rotate("+degrees+"deg)";
+	} else {
+		elem.style.transform = "rotate("+degrees+"deg)";
+	}
+	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	degrees++;
+	if(degrees > 359){
+		degrees = 1;
+	}
+	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+}
+</script>
+    
+</head>
+<body>
+    
+    <article>
+        
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="js/app.js"></script>
+    
+    <section id="nonmetal" class="wrapper">
+        
+        <img src="img/hydrogen.svg" id="img" alt="Hydrogen" />
+        
+        <script>rotateAnimation("img",30);</script>
+        
+        <h1>Hydrogen</h1>
+        
+        <div class="arrow"></div>
+    
+    </section>
+    
+    <section class="content">
+        
+        <p>In the early 1500s the alchemist Paracelsus noted that the bubbles given off when iron filings were added to sulfuric acid were flammable. In 1671 Robert Boyle made the same observation. Neither followed up their discovery of hydrogen, and so Henry Cavendish gets the credit. In 1766 he collected the bubbles and showed that they were different from other gases. He later showed that when hydrogen burns it forms water.</p>
+        
+        <table class="table-fill">
+                
+                <tbody class="table-hover"></tbody>
+            <tr>
+                <td>Atomic Number</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Relative atomic mass</td>
+                <td>1.008</td> 
+            </tr>
+            <tr>
+                <td>Melting point</td>
+                <td>−259.16°C</td>
+            </tr>
+            <tr>
+                <td>Boiling point</td>
+                <td>−252.879°C</td> 
+            </tr>
+                </tbody>
+    </table>
+        
+        <p>Hydrogen is easily the most abundant element in the universe. It is found in the sun and most of the stars, and the planet Jupiter is composed mostly of hydrogen. On Earth, hydrogen is found in the greatest quantities as water. It is present as a gas in the atmosphere only in tiny amounts – less than 1 part per million by volume. Some see hydrogen gas as the clean fuel of the future – generated from water and returning to water when it is oxidised. Hydrogen-powered fuel cells are increasingly being seen as ‘pollution-free’ sources of energy and are now being used in some buses and cars.</p>
+    
+    </section>
+    
+    </article>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Periodic Table</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+    
+    <script>
+var looper;
+var degrees = 0;
+function rotateAnimation(el,speed){
+	var elem = document.getElementById(el);
+	if(navigator.userAgent.match("Chrome")){
+		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Firefox")){
+		elem.style.MozTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("MSIE")){
+		elem.style.msTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Opera")){
+		elem.style.OTransform = "rotate("+degrees+"deg)";
+	} else {
+		elem.style.transform = "rotate("+degrees+"deg)";
+	}
+	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	degrees++;
+	if(degrees > 359){
+		degrees = 1;
+	}
+	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+}
+</script>
+    
+</head>
+<body>
+    
+    <article>
+    
+    <section id="alkaline" class="wrapper">
+        
+        <img src="img/calcium.svg" id="img" alt="Calcium" />
+        
+        <script>rotateAnimation("img",30);</script>
+        
+        <h1>Calcium</h1>
+        
+        <div class="arrow"></div>
+        
+    </section>
+    
+    <section class="content">
+        
+        <p>Atomic number 20.</p>
+        
+        <p>It is a soft gray alkaline earth metal, fifth-most-abundant element by mass in the Earth's crust.</p>
+        
+        <p>Calcium is produced in supernova nucleosynthesis.</p>
+    
+    </section>
+    
+    </article>
+
+</body>
+</html>

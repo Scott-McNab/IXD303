@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Periodic Table</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+    
+    <script>
+var looper;
+var degrees = 0;
+function rotateAnimation(el,speed){
+	var elem = document.getElementById(el);
+	if(navigator.userAgent.match("Chrome")){
+		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Firefox")){
+		elem.style.MozTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("MSIE")){
+		elem.style.msTransform = "rotate("+degrees+"deg)";
+	} else if(navigator.userAgent.match("Opera")){
+		elem.style.OTransform = "rotate("+degrees+"deg)";
+	} else {
+		elem.style.transform = "rotate("+degrees+"deg)";
+	}
+	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+	degrees++;
+	if(degrees > 359){
+		degrees = 1;
+	}
+	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+}
+</script>
+    
+</head>
+<body>
+    
+    <article>
+        
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- scripts -->
+        <script src="particles.js"></script>
+        <script src="js/app.js"></script>
+    
+    <section id="nonmetal" class="wrapper">
+        
+        <img src="img/nitrogen.svg" id="img" alt="Nitrogen" />
+        
+        <script>rotateAnimation("img",30);</script>
+        
+        <h1>Nitrogen</h1>
+        
+        <div class="arrow"></div>
+    
+    </section>
+    
+    <section class="content">
+        
+        <p>Nitrogen in the form of ammonium chloride, NH4Cl, was known to the alchemists as sal ammonia. It was manufactured in Egypt by heating a mixture of dung, salt and urine. Nitrogen gas itself was obtained in the 1760s by both Henry Cavendish and Joseph Priestley and they did this by removing the oxygen from air. They noted it extinguished a lighted candle and that a mouse breathing it would soon die.</p>
+        
+        <table class="table-fill">
+                
+                <tbody class="table-hover"></tbody>
+            <tr>
+                <td>Atomic Number</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Relative atomic mass</td>
+                <td>14.007 </td> 
+            </tr>
+            <tr>
+                <td>Melting point</td>
+                <td>−210.0°C</td>
+            </tr>
+            <tr>
+                <td>Boiling point</td>
+                <td>−195.795°C</td> 
+            </tr>
+                </tbody>
+    </table>
+        
+        <p>Nitrogen is cycled naturally by living organisms through the ‘nitrogen cycle’. It is taken up by green plants and algae as nitrates, and used to build up the bases needed to construct DNA, RNA and all amino acids. Amino acids are the building blocks of proteins. Nitrogen makes up 78% of the air, by volume. It is obtained by the distillation of liquid air. Around 45 million tonnes are extracted each year. It is found, as compounds, in all living things and hence also in coal and other fossil fuels.</p>
+    
+    </section>
+    
+    </article>
+
+</body>
+</html>

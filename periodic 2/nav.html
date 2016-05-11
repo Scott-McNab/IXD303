@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>"Path"-style navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+      <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+  background: url("http://subtlepatterns.com/patterns/low_contrast_linen.png");
+}
+
+#flynav {
+  width: 40%;
+  min-height: 20%;
+  margin: 15% 0 0 10%;
+}
+
+.circle-nav {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+            
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+#plus {
+  z-index: 1;
+  font-size: 64px;
+  line-height: 36px;
+}
+
+.link1out {
+  animation: move1out 0.5s 1 forwards;
+}
+
+.link1in {
+  animation: move1in 0.5s 1 forwards;
+}
+
+.link2out {
+  animation: move2out 0.5s 1 forwards;
+}
+
+.link2in {
+  animation: move2in 0.5s 1 forwards;
+}
+
+.link3out {
+  animation: move3out 0.5s 1 forwards;
+}
+
+.link3in {
+  animation: move3in 0.5s 1 forwards;
+}
+
+.link4out {
+  animation: move4out 0.5s 1 forwards;
+}
+
+.link4in {
+  animation: move4in 0.5s 1 forwards;
+}
+
+.plus {
+  animation: goplus 0.5s 1 forwards;
+}
+
+.times {
+  animation: gotimes 0.5s 1 forwards;
+}
+
+@keyframes move1out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-200px) rotate(360deg);
+  }
+}
+@keyframes move1in {
+  from {
+    transform: translateY(-200px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes move2out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-168px) translateX(100px) rotate(360deg);
+  }
+}
+@keyframes move2in {
+  from {
+    transform: translateY(-168px) translateX(100px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes move3out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateY(-90px) translateX(168px) rotate(360deg);
+  }
+}
+@keyframes move3in {
+  from {
+    transform: translateY(-90px) translateX(168px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes move4out {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: translateX(200px) rotate(360deg);
+  }
+}
+@keyframes move4in {
+  from {
+    transform: translateX(200px) rotate(360deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes goplus {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes gotimes {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+      
+      <header>
+        
+        <h1>Periodic Elements</h1>
+    
+    </header>
+      
+      <section id="element">
+
+    	<div id="flynav">
+		<div class="circle-nav" id="plus">+</div>
+		<div class="circle-nav" id="link1"><a href="hydrogen.html"> H  </a></div>
+		<div class="circle-nav" id="link2"><a href="carbon.html"> C </a></div>
+		<div class="circle-nav" id="link3"><a href="nitrogen.html"> N </a></div>
+		<div class="circle-nav" id="link4"><a href="oxygen.html"> O </a></div>
+	</div>
+          
+          </section>
+      
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
