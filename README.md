@@ -9,7 +9,7 @@
 * [Version 1](http://scott-mcnab.github.io/IXD303/periodic/index.html)
 
 
-## Version 2
+## Final Version
 
-* [Version 2](http://scott-mcnab.github.io/IXD303/periodic2/index.html)
+* [Final Version](http://elements.scottmcnab.design/)
 
